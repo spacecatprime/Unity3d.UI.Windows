@@ -37,7 +37,7 @@ namespace UnityEditor.UI.Windows {
 			
 			var editor = WindowComponentLibraryChooser.CreateInstance<WindowComponentLibraryChooser>();
 			var title = "UI.Windows Components Filter";
-			#if !UNITY_4
+			#if !UNITY_4 && !UNITY_5
 			editor.titleContent = new GUIContent(title);
 			#else
 			editor.title = title;

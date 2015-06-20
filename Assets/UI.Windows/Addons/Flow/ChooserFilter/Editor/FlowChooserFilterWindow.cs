@@ -25,7 +25,7 @@ namespace UnityEditor.UI.Windows.Plugins.Flow {
 			
 			var editor = FlowChooserFilterWindow.CreateInstance<FlowChooserFilterWindow>();
 			var title = "UI.Windows Flow Filter";
-			#if !UNITY_4
+			#if !UNITY_4 && !UNITY_5
 			editor.titleContent = new GUIContent(title);
 			#else
 			editor.title = title;

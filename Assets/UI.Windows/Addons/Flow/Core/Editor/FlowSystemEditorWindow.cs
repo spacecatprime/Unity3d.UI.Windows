@@ -54,7 +54,7 @@ namespace UnityEditor.UI.Windows.Plugins.Flow {
 			editor.onClose = onClose;
 			
 			var title = "UIW Flow";
-			#if !UNITY_4
+			#if !UNITY_4 && !UNITY_5
 			editor.titleContent = new GUIContent(title, Resources.Load<Texture2D>("UI.Windows/Icons/FlowIcon"));
 			#else
 			editor.title = title;

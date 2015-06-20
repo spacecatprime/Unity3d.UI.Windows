@@ -96,7 +96,7 @@ namespace UnityEditor.UI.Windows.Plugins.Flow {
 
 			var title = "UI.Windows Flow Screen Editor ('{0}')";
 			title = string.Format(title, this.window.title);
-			#if !UNITY_4
+			#if !UNITY_4 && !UNITY_5
 			this.view.titleContent = new GUIContent(string.Format(title, this.window.title));
 			#else
 			this.view.title = string.Format(title, this.window.title);
